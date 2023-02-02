@@ -1,0 +1,20 @@
+---
+# tasks file for vim
+    - name: install nodejs on ubuntu
+      ansible.builtin.apt:
+        name: 
+           - nodejs
+           - npm
+        update_cache: yes
+        state: present
+      when: ansible_facts["hostname"] == "ip-172-31-42-245"
+    - name: curl on nodejs
+      ansible.builtin.shell:
+        cmd: curl –sL https://rpm.nodesource.com/setup_10.x | sudo bash -
+      when: ansible_facts["hostname"] == "ip-172-31-39-62"
+    - name: install nodejs on centos
+      ansible.builtin.yum:
+        name: nodejs
+        state: present
+        update_cache: true
+      when: ansible_facts["hostname"] == "ip-172-31-39-62"
