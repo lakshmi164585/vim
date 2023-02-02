@@ -37,9 +37,14 @@ Author Information
 
 An optional section for the role authors to include contact information, or a website (HTML is not allowed).
 
-```
+
 ```
 # first we have to install nodejs manually on ubuntu and centos7
+
+```
+[Refer Here](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-22-04)
+[Refer Here](https://phoenixnap.com/kb/install-node-js-npm-centos)
+```
 ```
 ##Manual commands on ubuntu@
 ```
@@ -50,6 +55,7 @@ An optional section for the role authors to include contact information, or a we
     4 history 
  ```
 ## Manual commands on centos7
+```
 *   1  sudo yum update
     2  sudo yum install nodejs
     3  curl –sL https://rpm.nodesource.com/setup_10.x | sudo bash -
